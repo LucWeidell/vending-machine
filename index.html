@@ -22,7 +22,23 @@
         </nav>
     </header>
     <main class="container">
-        <div id="app"></div>
+        <div class="row">
+            <div class="col">
+                <h4>Vending Machine:</h4>
+            </div>
+            <div class="col" id='payments'>
+                <button class="btn btn-primary" onclick="app.vendingsController.pay(.25)">Pay Quarter</button>
+                <button class="btn btn-primary" onclick="app.vendingsController.pay(.10)">Pay Dime</button>
+                <button class="btn btn-primary" onclick="app.vendingsController.pay(.05)">Pay Nickle</button>
+                <button class="btn btn-primary" onclick="app.vendingsController.pay(.01)">Pay Penny</button>
+                <button class="btn btn-primary" onclick="app.vendingsController.returnChange()">Return my Money</button>
+            </div>
+            <div class="col" id='snacks'>
+
+            </div>
+        </div>
+    <!-- NOTE dont need value classes
+        <div id="app"></div> -->
     </main>
     <footer class="bg-dark text-light">
         <div class="text-center">
