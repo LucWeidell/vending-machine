@@ -26,4 +26,16 @@ export default class Snacks{
     return this.name
   }
 
+  getCost(){
+    return this.cost;
+  }
+
+  canReduceStock(){
+    if(this.stock > 0){
+      this.stock--
+      return true
+    }
+    return false
+  }
+
 }
